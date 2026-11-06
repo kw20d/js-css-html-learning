@@ -1,10 +1,10 @@
-const name = "Wala Eddine";
-var age = 18;
-var isStudent = true;
-var a = 1;
-var b = 2;
+const myName = "Wala Eddine";
+let age = 18;
+let isStudent = true;
+let a = 1;
+let b = 2;
 
-console.log("My Name is: ", name);
+console.log("My Name is: ", myName);
 console.log("My Age is: ", age);
 console.log("Am I a Student: ", isStudent);
 console.log("a + b: ", a + b);
