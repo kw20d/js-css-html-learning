@@ -45,13 +45,13 @@ function golfScore(par, strokes)
         return "Hole-in-one!";
     else if(strokes <= par - 2)
         return "Eagle";
-    else if(strokes <= par - 1)
+    else if(strokes === par - 1)
         return "Birdie";
     else if(strokes === par)
         return "Par";
-    else if(strokes >= par + 1)
+    else if(strokes === par + 1)
         return "Bogey";
-    else if(strokes >= par + 2)
+    else if(strokes === par + 2)
         return "Double Bogey";
     else
         return "Go Home!";
@@ -68,11 +68,10 @@ function golfScore2(par, strokes)
     [par + 2,"Double Bogey"],[par + 3,"Go Home!"]];
     for (let i = 0; i < (scores.length - 1); i++)
     {
-        if(strokes > par && strokes >= scores[i][0])
-            return scores[i][1];
-        else if(strokes <= par && strokes <= scores[i][0])
+        if(strokes >= scores[i][0])
             return scores[i][1];
     }
+    return "Go Home!";
 }
 
 console.log("Your Golf score is:", golfScore2(5, 4));
@@ -109,7 +108,7 @@ console.log("The Word was", caseInSwitch("g"));
 
 function notes(val)
 {
-    answer = "";
+    let answer = "";
     switch(val)
     {
         case 1:
