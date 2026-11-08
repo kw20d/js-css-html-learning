@@ -144,16 +144,16 @@ console.log(newDiv);
 */
 
 const counterDisplay = document.getElementById('counter-badge');
-let currentItems = document.querySelectorAll('.list-group-item');
+//let currentItems = document.querySelectorAll('.list-group-item');
 let updateUi = () => {
    const freshItems = document.querySelectorAll('.list-group-item');
    counterDisplay.textContent = freshItems.length;
 };
 
-let clickCount = 0;
-let list = document.getElementById('items');
+//let clickCount = 0;
+const list = document.querySelector('.list-group');
 let input = document.querySelector('input');
-let buttonClick = () => {
+/*let buttonClick = () => {
    if(input.value === "")
    {
       return;
@@ -183,6 +183,20 @@ let buttonClick = () => {
       list.appendChild(newSpace);
    }
    updateUi();
+};*/
+let buttonClick = () => {
+   if(input.value === "")
+   {
+      return;
+   }
+   //currentItems = document.querySelectorAll('.list-group-item');
+   let newSpace = document.createElement('li');
+   newSpace.textContent = input.value;
+   newSpace.className = 'list-group-item';
+   newSpace.setAttribute('onclick', 'deleteItem(this)');
+   list.appendChild(newSpace);
+   input.value = "";
+   updateUi();
 };
 input.addEventListener('keydown', (event) => {
    if(event.key === 'Enter')
@@ -191,13 +205,13 @@ input.addEventListener('keydown', (event) => {
       buttonClick();
    }
 });
-let button = document.getElementById('button').addEventListener
+document.getElementById('button').addEventListener
 ('click', buttonClick);
 
 let deleteItem = (item) => {
    item.remove();
-   if(clickCount != 0)
-      clickCount--;
+   /*if(clickCount != 0)
+      clickCount--;*/
    //currentItems = document.querySelectorAll('.list-group-item');
    updateUi();
 }
