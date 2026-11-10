@@ -41,10 +41,9 @@ let search = (input) => {
         document.body.style.backgroundImage = "none";
         document.body.style.backgroundColor = 'black';
         input.style.backgroundColor = '#303134';
-        input.style.color = '#303134';white
         button1.style.backgroundColor = '#303134';
         button2.style.backgroundColor = '#303134';
-        document.body.style.color = '#9aa0a6';
+        document.body.style.color = '#303134';
         input.value = "";
         return;
     }
