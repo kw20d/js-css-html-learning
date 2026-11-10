@@ -53,7 +53,9 @@ let search = (input) => {
         document.body.style.backgroundColor = 'white';
         input.style.backgroundColor = 'white';
         button1.style.backgroundColor = '#f8f9fa';
+        button1.style.color = '#9b9b9b';
         button2.style.backgroundColor = '#f8f9fa';
+        button2.style.color = '#9b9b9b';
         document.body.style.color = 'black';
         input.value = "";
         return;
