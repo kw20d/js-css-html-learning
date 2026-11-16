@@ -6,6 +6,7 @@ My daily log while learning web development, with one folder per day. Finished p
 
 - **To Do List**: [repo](https://github.com/kw20d/neverdolist) · [live demo](https://neverdolist.netlify.app/)
 - **ASCII Art Camera**: [repo](https://github.com/kw20d/ascii-camera) · [live demo](https://zascii-camera.netlify.app/)
+- **command-line Portfolio**: [repo](https://github.com/kw20d/command-line-os) · [live demo](https://kw20d.github.io/command-line-os/)
 
 ## Log
 
