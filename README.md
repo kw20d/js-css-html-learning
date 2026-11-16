@@ -19,7 +19,7 @@ My daily log while learning web development, with one folder per day. Finished p
 | day-05 | Nov 12 | Started the terminal-style portfolio: prompt, help, clear, echo and command history ([repo](https://github.com/kw20d/command-line-os)) |
 | day-06 | Nov 13 | Terminal: command table, scrollback, whoami, history with Up/Down ([repo](https://github.com/kw20d/command-line-os)) |
 | day-07 | Nov 14 | Terminal: Terminal: virtual filesystem with ls, cd and error handling ([repo](https://github.com/kw20d/command-line-os)) |
-| day-08 | Nov 16 | ZIX-OS: open, color, pwd, real file tree, intro and sound effects, README ([live](https://kw20d.github.io/command-line-os/)) |
+| day-08 | Nov 15-16 | ZIX-OS: open, color, pwd, real file tree, intro and sound effects, README ([live](https://kw20d.github.io/command-line-os/)) |
 
 ## Tools
 
